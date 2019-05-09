@@ -1,0 +1,6 @@
+>> créer une clé RSA
+ssh-keygen -t rsa -b 4096 -C "next09052019@gmail.com"
+
+>> Initialiser un répertoire GIT
+git init
+
