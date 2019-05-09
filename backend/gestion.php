@@ -24,6 +24,7 @@ require 'templates/header.php' ?>
                         <th>Prénom</th>
                         <th>Admin ?</th>
                         <th>Date d'inscription</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,6 +45,11 @@ require 'templates/header.php' ?>
                             <?php $date_creation = date_create($user['created_at']) ?>
                             <?= date_format($date_creation,'d/m/Y H:i') ?>
 <!--                            12/02/2019 14h56-->
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-dark"
+              href="../controllers/toggleAdmin.php?id=<?= $user['id'] ?>">
+                                Donner droit admin</a>
                         </td>
                     </tr>
                 <?php endforeach ?>
