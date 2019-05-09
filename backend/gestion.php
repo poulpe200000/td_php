@@ -2,6 +2,9 @@
 require '../kernel/db_connect.php';
 require '../models/user.php';
 $users = findAllUsers();
+// Ici ajout d'un commentaire
+/// super cool git
+
 //var_dump($users);
 //die();
 require 'templates/header.php' ?>
