@@ -1,6 +1,23 @@
->> créer une clé RSA
+﻿>> créer une clé RSA
 ssh-keygen -t rsa -b 4096 -C "next09052019@gmail.com"
+
 
 >> Initialiser un répertoire GIT
 git init
+
+>> Ajouter ses fichiers/dossiers à un dépôt git
+git add .
+
+// Ajouter un fichier en particulier
+git add backend/index.php
+
+// Configurer un user Git
+git config --global user.email "next09052019@gmail.com"
+git config --global user.name "poulpe200000"
+
+// Faire un commit
+git commit -m "first commit"
+ 
+// Synchroniser le repertoire local avec le repertoire distant (à faire une fois)
+git remote add origin git@github.com:poulpe200000/td_php.git
 

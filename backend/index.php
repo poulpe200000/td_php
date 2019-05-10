@@ -3,7 +3,9 @@ session_start();
 //print_r($_SESSION);
 require "../kernel/functions.php";
 require 'templates/header.php';
+
 ?>
+
 
 <body>
 <div class="container">
